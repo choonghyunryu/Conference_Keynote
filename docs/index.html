@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>R in Sports</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="저자: 알사랑" />
+    <meta name="date" content="2021-11-19" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/rconf.css" type="text/css" />
+    <link rel="stylesheet" href="css/rconf-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+class: title-slide, left, bottom
+
+# R in Sports
+----
+## **올림픽 우승팀 예측**
+### 저자: 알사랑
+### 2021-11-19
+
+ 
+---
+class: inverse, middle
+name: data-science-case
+
+# 발표 개요
+
+----
+
+.pull-left[
+
+.black[**디지털 불평등(Digital Divide)**]과 .red[**디지털 경제전환(Digital Transformation)**]의 가속화가 코로나19로 보다 명확해진 시대다. 이러한 변화의 중심에 빅데이터, 기계학습, 인공지능 등 데이터 기반 기술이 자리 잡고 있으며 또 집중 관심을 받고 있다. 데이터 시대를 맞아 **R**은 통계에 기반한 프로그래밍 언어임에도 불구하고 다른 범용 프로그래밍 언어와 같은 큰 인기를 얻고 있다.
+
+금번 .green[**‘한국 R 컨퍼런스 2021’**] 은 기존 통계학 관련 학계, 산업계, 정부 뿐 아니라 데이터 과학계까지 망라해 데이터를 통해 문제를 해결하고 가치를 창출하고자 하는 모든 분이 모여 경험과 지식을 공유하고 네트워킹을 할 수 있는 자리로 기획하였다. 데이터 활용의 폭과 깊이를 더한 이 자리에서 데이터를 통해 새로운 세상을 열어가고 함께 하실 수 있는 많은 분을 만나는 소중한 시간이 되었으면 합니다.
+
+]
+ 
+.pull-right[   
+.left[
+
+1\. **[.black[디지털 불평등]](#digital-inequality)**
+
+2\. **[.red[디지털 경제전환]](#digital-inequality)**
+
+3\. **[.green[한국 R 컨퍼런스 2021]](#digital-inequality)**
+
+4\. [마무리](#digital-goodbye)
+
+]
+] &lt;!--end of right-column--&gt;
+
+
+&lt;!--------------------------  디지털 경제 전환 -----------------------------------------&gt;
+
+---
+name: ml-bigdata-ml
+# 빅데이터와 기계학습
+
+.center[
+  &lt;img src="fig/intree-xy-f.png" alt="정형데이터와 비정형 데이터, 그리고 기계학습" width="90%"&gt;
+]
+
+
+.footnote[
+- [데이터 가져오기](https://statkclee.github.io/ingest-data/)
+    - [직사각형 데이터](https://statkclee.github.io/data-science/)
+    - [텍스트 데이터](https://statkclee.github.io/text/)
+    - [네트워크 데이터](https://statkclee.github.io/network/)
+    - [지리정보 데이터](https://statkclee.github.io/spatial/)
+    - [이미지 데이터](https://statkclee.github.io/trilobite/)
+    - 오디오/소리 데이터
+    - ...
+]
+
+
+---
+name: ml-bigdata-ml
+# 소프트웨어 1.0과 2.0
+
+- 소프트웨어 1.0: 사람이 직접 규칙(Rule)을 작성하여 똑똑한 시스템 개발
+- 소프트웨어 2.0: 데이터에서 딥러닝 알고리즘을 활용 기계가 알고리즘(Algorithm) 제작 
+
+.center[
+  &lt;img src="fig/programming_machine_learning_comparison.png" width="77%"&gt;
+]
+
+.footnote[
+   [궁극의 주인이 될 알고리즘(Master Algorithm)](https://statkclee.github.io/ai-lab/master-algorithm.html)
+]
+
+---
+name: rconf-goodbye
+class: middle, inverse
+
+.pull-left[
+# **경청해 주셔서 &lt;br&gt;감사합니다.**
+&lt;br/&gt;
+## R 사용자회
+
+]
+
+.pull-right[
+.right[
+
+&lt;img style="border-radius: 100%;" src="https://raw.githubusercontent.com/statkclee/art/gh-pages/fig/koRea_vertical_logo.png" width="300px"/&gt;
+
+]
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "googlecode",
+"highlightLines": true,
+"highlightLanguage": "r",
+"countIncrementalSlides": false,
+"ratio": "4:3"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<!--Hat-tip: https://www.garrickadenbuie.com/blog/xaringan-tip-logo-all-slides/-->
+<style>
+.logo {
+  background-image: url(https://raw.githubusercontent.com/statkclee/art/gh-pages/fig/koRea_vertical_logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 110px;
+  height: 128px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

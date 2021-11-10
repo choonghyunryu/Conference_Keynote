@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding');
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: 'Nanum Gothic Coding', monospace;
+}
