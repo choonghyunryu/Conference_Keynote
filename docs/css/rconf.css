@@ -1,3 +1,13 @@
+:root {
+  --custom-grey60: rgb(102, 102, 102);
+  --custom-grey20: rgb(204, 204, 204);
+  --custom-grey10: rgb(230, 230, 230);
+  --custom-blue: rgb(0, 114, 188);
+  --custom-lightblue: rgb(204, 227, 242);
+  --custom-orange: rgb(255, 127, 42); 
+  --custom-lightorange: rgb(255, 204, 170); 
+}
+
 /*-- LINKS/ANCHORS --*/
 a {
   color:              #005EB8;
@@ -153,7 +163,7 @@ blockquote {
 
 /*-- NHS organisation logo --*/
 .title-slide {
-  background-image:    url(https://raw.githubusercontent.com/statkclee/art/gh-pages/fig/koRea_vertical_logo.png);
+  background-image:    url(../fig/rconf-logo.png);
   background-position: 95% 10%;
   background-size:     300px;
 }
@@ -177,3 +187,12 @@ blockquote {
 .warmyellow { color:   #FFB81C }
 .black      { color:   #000000 }
 
+
+.panelset {
+  --panel-tab-foreground: currentColor !important;
+  --panel-tab-active-foreground: var(--custom-blue) !important;
+  --panel-tab-active-background: var(--custom-lightblue) !important;  
+  --panel-tab-hover-foreground: var(--custom-blue) !important;
+  --panel-tabs-border-bottom: #ddd !important;
+  --panel-tab-inactive-opacity: 0.5 !important;
+}
