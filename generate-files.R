@@ -1,10 +1,8 @@
 library(xaringanBuilder)
 
-# build_pdf(input = "xaringan_test.Rmd", output_file = "xaringan_test.pdf")
-
-build_pdf(input = "rconf.Rmd", output_file = "rconf.pdf")
-build_pptx(input = "rconf.Rmd", output_file = "rconf.pptx")
-build_gif(input = "rconf.Rmd", output_file = "rconf.gif")
+build_pdf( input = "keynote_againR.Rmd",  output_file = "keynote_againR.pdf")
+build_pptx(input = "keynote_againR.Rmd",  output_file = "keynote_againR.pptx")
+build_gif( input = "keynote_againR.Rmd",  output_file = "keynote_againR.gif")
 
 # Xaringan --> PPTX
 # library(slidex)

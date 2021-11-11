@@ -25,7 +25,7 @@ class: title-slide, left, bottom
 ----
 ## **R의 부활을 꿈꾸며**
 ### 유충현
-#### (한화생명, R 사용자회)
+#### (한화생명, Tidyverse Korea)
 ### 2021-11-19
 
  
@@ -39,9 +39,9 @@ name: data-science-case
 
 .pull-left[
 
-한국에서 R 사용자를 위한 첫 컨퍼런스인, .red[**'R User Conference 2011'**]이 성황리에 개최된 지 10년이 흘렀습니다. 강산이 변한다는 10년동안 국내외 데이터 분석 필드는 많은 변화와 발전을 이루었으며, 디지털 경제전환(Digital Transformation)의 가속화의 핵심에는 데이터와 데이터 분석 기술이 있다는 중론이 있습니다.
+한국에서 R 사용자를 위한 첫 컨퍼런스인, .orange[**'R User Conference 2011'**]이 성황리에 개최된 지 10년이 흘렀습니다. 강산이 변한다는 10년동안 국내외 데이터 분석 필드는 많은 변화와 발전을 이루었으며, 디지털 경제전환(Digital Transformation)의 가속화의 핵심에는 데이터와 데이터 분석 기술이 있다는 중론이 있습니다.
 
-10년 전 컨퍼런스를 호스트한 R 사용자로서의 감회는, .red[**데이터 분석 필드의 염원과 기대를 R의 대중화로 뿌리내리지 못한 것에 대한 아쉬움**]을 앞설 수 없습니다. 다시 R 사용자의 염원을 담아서 .red[**R에 대한 관심과 대중화를 위한 몇 가지 시도를 소개**]하면서, 커뮤니티의 동참을 제안합니다.
+10년 전 컨퍼런스를 호스트한 R 사용자로서의 감회는, .orange[**데이터 분석 필드의 염원과 기대를 R의 대중화로 뿌리내리지 못한 것에 대한 아쉬움**]입니다. 다시 R 사용자의 염원을 담아서 .orange[**R에 대한 관심과 대중화를 위한 몇 가지 시도를 소개**]하면서, R 사용자의 관심을 요청합니다.
 
 ]
  
@@ -56,7 +56,7 @@ name: data-science-case
 
 4\. [엔터프라이즈를 위한 R 환경 개선](#enterprise)
 
-5\. [마무리](#rconf-goodbye)
+5\. [마무리](#close)
 
 ]
 ] &lt;!--end of right-column--&gt;
@@ -100,7 +100,7 @@ name: intro-survey
 
 --
 
-R 대중화를 위한 솔루션은 .blue[**무엇이었던가?**]
+.blue[**R 대중화**]를 위한 .blue[**솔루션**]  은 .blue[**무엇이었던가?**]
 
 --
 
@@ -111,7 +111,7 @@ R 대중화를 위한 솔루션은 .blue[**무엇이었던가?**]
 - 일선 현장에서의 활용을 위한 지원 체계
 
 --
-
+ 
 - 엔터프라이즈 환경에서의 활용 사례 발굴
 
 --
@@ -178,10 +178,24 @@ name: rconf
   &lt;img src="fig/again_wind.png" alt="한국 R 컨퍼런스 2021 홈페이지 발췌" width="70%"&gt;
 ]
     
-* .red[**"Again Wind in Korea with GNU R"**]
-  + 10년 전처럼, .blue[**R에 대한 기대감 염원**]을 불을 다시 지피기 위한 
-      + R을 활용하는 최적 솔루션 제언
-      + 한국의 R 생태계 조성을 위한 협업 제안
+--
+
+- .blue[**"Again Wind in Korea with GNU R"**]
+
+--
+
+- 10년 전처럼, 오늘 행사가 .blue[**R에 대한 기대감 염원**]에 불을 다시 지피기는 계기 
+
+--
+
+- 개별 세션들을 통해서 시청자들이 많은 경험을 습득하는 컨퍼런스가 되길 기대 
+
+--
+
+- 개인적으로는
+  - 20여년 R 사용을 통해 꿈 꾸었던 빅 빅처를 소개하고,
+  - 역동적인 한국의 R 생태계 조성을 위한 협력이 늘어나기를 기대
+
 
 ---
 name: survey-1
@@ -232,13 +246,13 @@ name: intro-openstat
 ]
 
 * 오픈소스 통계분석 시스템이란?
-  + **R/Shiny**로 개발한 **오픈소스** 기반의 R 패키지, 현재 **프로토타이핑** 중
+  + .blue[**R/Shiny**]로 개발한 .blue[**오픈소스**] 기반의 R 패키지, 현재 **프로토타이핑** 중
 
 * 아카데미, 중소기업, 공공기관, 일반인 대상  
   + 통계 비전공자들을 위한 데이터 분석 시스템 
   + R을 모르더라도 사용가능, R 사용자는 더욱 쉽게 활용 
 
-* **기초통계** 및 **머신러닝** 분석 기능 제공
+* .blue[**기초통계**] 및 .blue[**머신러닝**] 분석 기능 제공
 
 
 ---
@@ -252,6 +266,36 @@ name: feature-openstat
   &lt;img src="fig/bitstat_kor.jpeg" alt="한글 메뉴" width="55%"&gt;
   &lt;img src="fig/bitstat_eng.jpeg" alt="영문 메뉴" width="55%"&gt;  
 ]
+
+
+---
+name: why-openstat
+# 왜 통계분석 시스템인가?
+
+--
+
+**뿌리깊은 나무는 바람에 아니 뮐세**
+- 머신러닝, 딥 러링(AI)의 학문적 백드라운드인 통계학
+- 데이터를 이해하고 인사이트를 발굴할 수 있는 보편적인 통계적 방법론 적용
+
+--
+
+**예쁘지만 만질 수 없는 그림 속의 장미꽃**
+- 팬시한 딥러닝 사례는 만지만, 현실속에서 활용한 사례는 제한적
+- 만질 수 있는 안개꽃이 현실적 (데이터 한계, 리소스 한계, 분석 목적에 부합하는 방법)
+
+--
+
+**대중을 위한 보편적인 기능에 충실하자**
+- 엔터프라이즈 시장이 대상이 아닌 아카데미, 소규모 연구 및 분석 조직 타켓팅 
+- Digital Transformation 시대에 소외된 계층 지원
+- 파레토 법칙 &amp;#8594; 80%는 통계적 방법론에 부합하고, 20%가 머신러닝/딥러닝이 필요?
+
+--
+
+**Win-Back을 기대하며**
+- 오픈 통계분석 시스템 사용자가 R 사용자로 전향하는 사례 기대
+- R은 목적이 아닌 수단이지만, 그래도 이왕이면 R 사용자
 
 
 ---
@@ -314,10 +358,10 @@ name: solution-furrr
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.165 -&lt;span style='color: #BB0000;'&gt;1.41&lt;/span&gt;      1.44 
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.993 -&lt;span style='color: #BB0000;'&gt;0.412&lt;/span&gt;    -&lt;span style='color: #BB0000;'&gt;0.950&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.380  1.46      0.908
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.706 -&lt;span style='color: #BB0000;'&gt;1.09&lt;/span&gt;     -&lt;span style='color: #BB0000;'&gt;9.53&lt;/span&gt; 
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt; 0.005&lt;span style='text-decoration: underline;'&gt;16&lt;/span&gt;  1.89     1.10  
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt; 0.148    0.730   -&lt;span style='color: #BB0000;'&gt;0.255&lt;/span&gt; 
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt; 0.218    0.465   -&lt;span style='color: #BB0000;'&gt;0.041&lt;/span&gt;&lt;span style='color: #BB0000; text-decoration: underline;'&gt;2&lt;/span&gt;
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt; 0.945    1.28     1.83  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ```r
@@ -346,10 +390,10 @@ distribution_minmax
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0      0         1    
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   1      0.348     0.782
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.259  1         0.952
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.653  0.111     0    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0      1         0.648
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.152  0.186     0    
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.226  0         0.103
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1      0.571     1    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -367,10 +411,10 @@ tibble::as_tibble(distribution_minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0      0         1    
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   1      0.348     0.782
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.259  1         0.952
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.653  0.111     0    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0      1         0.648
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.152  0.186     0    
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.226  0         0.103
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1      0.571     1    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -386,10 +430,10 @@ purrr::map_df(distribution, minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0      0         1    
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   1      0.348     0.782
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.259  1         0.952
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.653  0.111     0    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0      1         0.648
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.152  0.186     0    
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.226  0         0.103
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1      0.571     1    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -410,10 +454,10 @@ furrr::future_map_dfr(distribution, minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0      0         1    
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   1      0.348     0.782
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.259  1         0.952
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.653  0.111     0    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0      1         0.648
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.152  0.186     0    
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.226  0         0.103
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1      0.571     1    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -460,9 +504,9 @@ name: intro-rdam
 ]
 
 * RDAM(R Data Analytics Methodology)
-  + RDAM은 데이터 분석의 절차 및 방법의 표준을 제시하고, 분석의 생산성과 품질 향상을 위한 여러 콤포넌트로 구성된 R 기반의 데이터분석 방법론 Eco System
+  + RDAM은 .blue[**데이터 분석의 절차 및 방법의 표준을 제시**]하고, .blue[**분석의 생산성과 품질 향상**]을 위한 여러 콤포넌트로 구성된 .blue[**R 기반의 데이터분석 방법론 Eco System**]
 * RDAM 목적
-  + 분석가의 경험과 무관하게 만족할 수준 이상의 분석 결과를 얻을 수 있도록 조력
+  + .blue[**분석가의 경험과 무관하게, 만족할 수준 이상의 분석 결과를 얻을 수 있도록 조력**]
 * RDAM 구성
   + 4개 layers와 8개의 components로 구성되며, 각각의 layers와 components는 상호 유기적으로 결합되어 운용
 
@@ -492,14 +536,226 @@ name: rdam-component
 name: rdam-process
 # Data Analytics Process
 
-.center[
-  &lt;img src="fig/data-science.png" alt="R4DS" width="70%"&gt;
+- 데이터 분석 과정을 구조화하여 프로세스로 정의한 절차적 Compliance
+
+--
+
+.pull-left[
+  &lt;img src="fig/data-science.png" alt="R4DS" width="95%"&gt;
+.caption[
+.grey[.small[R for Data Science 분석 프로세스]]
+]
 ]
 
 --
-.center[
-  &lt;img src="fig/bitstat_eng.jpeg" alt="R4DS" width="70%"&gt;
+
+.pull-right[
+  &lt;img src="fig/level3.png" alt="process levels" width="95%"&gt;
+.caption[
+.grey[.small[RDAM에 분석 프로세스의 구조]]
+]  
 ]
+
+--
+
+- RDAM에서는 데이터 분석 수행 단계분만 아니라,
+  - 데이터 분석 프로젝트를 셋업하고, 
+  - 분석 결과를 시스템에 적용(DataOps)하는 프로젝트를 마무리 등 전 과정 정의
+  
+- 5 Phases, 12 Activities, 23 Tasks  
+
+
+---
+name: rdam-process-detail
+# Data Analytics Process
+
+.pull-left[
+  &lt;img src="fig/process-1.png" alt="Phase" width="95%"&gt;
+.caption[
+.grey[.small[Phase 레벨 프로세스]]
+]
+]
+
+
+.pull-right[
+  &lt;img src="fig/process-2.png" alt="Activity" width="75%"&gt;
+.caption[
+.grey[.small[Phase 레벨 프로세스 예시]]
+]  
+]
+
+
+.pull-left[
+  &lt;img src="fig/process-3.png" alt="Phase" width="95%"&gt;
+.caption[
+.grey[.small[Task 레벨 프로세스  예시]]
+]
+]
+
+
+.pull-right[
+  &lt;img src="fig/process-4.png" alt="Activity" width="95%"&gt;
+.caption[
+.grey[.small[프로세스 목록]]
+]  
+]
+
+
+---
+name: rdam-spm
+# Standard Procedure Manuals
+
+- Data Analytics Process 개별 과정의 표준과 절차를 정의한 .blue[**표준 및 절차 매뉴얼**]
+
+
+.pull-left[
+  &lt;img src="fig/SPM1.png" alt="R4DS" width="95%"&gt;
+.caption[
+.grey[.small[Project Initiation 스크린샷]]
+]
+]
+
+
+.pull-right[
+  &lt;img src="fig/SPM2.png" alt="process levels" width="95%"&gt;
+.caption[
+.grey[.small[Data Acquisition 스크린샷]]
+]  
+]
+
+
+- 5개 Phase별, 표준 및 절차 매뉴얼 개발
+
+- bookdown으로 작성된 웹 문서로 배포하며, PDF 문서 파일로도 다운로드 가능함
+  
+  
+---
+name: rdam-guide
+# Guides
+
+- 데이터 분석 과정에서 수행하는 특정 작업의 .blue[**표준을 위해 제정한 지침**]
+
+.center[
+  &lt;img src="fig/coding-guide.png" alt="R4DS" width="45%"&gt;
+.caption[
+.grey[.small[R 코딩 가이드 북 스크린 샷]]
+]
+]  
+  
+- 분석서버 운영 가이드
+  - RStudio Server 운영 가이드
+  - Shiny Server 운영 가이드    
+- R 코딩 가이드
+  - R 코딩 가이드북
+  - R 코딩 템플리트
+- 프로젝트 커뮤니케이션 가이드
+  - Reproducible Research 이용한 분석결과 리뷰 템플리트 
+
+
+---
+name: rdam-lib
+# Analytics Library / Toolkit
+
+- 데이터 분석을 위해 엄선한 R 패키지와 .blue[**자동화하거나 UX로 구성한 자동화 툴**]
+
+--
+- dlookr (https://choonghyunryu.github.io/dlookr/)
+  - support **Data Diagnosis**, **EDA**, **Data Transformation** Activity
+  
+- alookr (https://choonghyunryu.github.io/alookr/)
+  - support **Supervised Modeling** Activity
+
+--
+
+- mlookr (미개발)
+  - support **Plan Deployment** Activity
+
+--
+
+.center[
+  &lt;img src="fig/dlookr_logo.png" alt="dlookr logo" width="20%"&gt;
+  &lt;img src="fig/alookr_logo.png" alt="alookr logo" width="20%"&gt; 
+]  
+
+
+
+---
+name: rdam-lib2
+# dlookr / alookr
+
+.pull-left[
+.large[**dlookr**]
+
+- 데이터 품질 진단
+- 탐색적 데이터 분석
+- 변수변환, 결측치 및 이상치 처리
+- 자동화된 보고서 3종
+  - 웹 보고서, PDF 보고서
+- data.frame, DBMS의 테이블 지원  
+
+  &lt;img src="fig/eda_web_title.jpeg" alt="dlookr" width="95%"&gt;  
+.caption[
+.grey[.small[dlookr 스크린샷]]
+]
+]
+
+
+.pull-right[
+.large[**alookr**]
+
+- 모델용 데이터 분할 및 정제
+- 대표 이진분류 모델 자동 적합
+- 모델 성능 평가 및 최적 모델 선택
+- 이진 분류 전 과정 지원
+  - auto-ML 
+- h2o 및 python 모델 수용 계획  
+
+  &lt;img src="fig/cutoff-3.png" alt="alookr" width="100%"&gt;
+.caption[
+.grey[.small[alookr 스크린샷]]
+]  
+]
+
+
+---
+name: rdam-tech
+# Tech Notes
+
+- 데이터 분석 기법과 활용을 기술적으로 집대성한 .blue[**R 테크니컬 가이드**]
+
+
+.pull-left[
+  &lt;img src="fig/tech2.png" alt="process levels" width="95%"&gt;
+.caption[
+.grey[.small[Exploratory Data Analysis 스크린샷]]
+]  
+]
+
+.pull-right[
+  &lt;img src="fig/tech1.png" alt="R4DS" width="95%"&gt;
+.caption[
+.grey[.small[Supervised Modeling 스크린샷]]
+]
+]
+
+- 7개 Activity별 테크니컬 노트 개발
+
+- bookdown으로 작성된 웹 문서로 배포하며, PDF 문서 파일로도 다운로드 가능함
+
+- 앞에서 다룬 R에서의 대용량 데이터 핸들링 방법 등이 테크니컬 노트에 수록  
+
+
+---
+name: close
+
+# 마무리
+
+- 한국 R 생태계의 활성화 기대
+  - 오픈 통계 분석기의 대중화 
+  - R 데이터 분석 방법론의 데이터 분석 현장에서의 활용
+
+- 후속 세션을 통해서 R 관련 많은 정보를 얻고, 현장에서 적용하기를 바람
+
 
 
 ---
@@ -509,14 +765,18 @@ class: middle, inverse
 .pull-left[
 # **경청해 주셔서 &lt;br&gt;감사합니다.**
 &lt;br/&gt;
-## R 사용자회
+
+## 유충현
+### Tidyverse Korea
+### choonghyun.ryu@gmail.com
 
 ]
 
 .pull-right[
-.right[
-&lt;img src="fig/dlookr_logo.png" alt="dlookr logo" width="40%"&gt;
-&lt;img src="fig/alookr_logo.png" alt="alookr logo" width="40%"&gt;
+.left[
+&lt;img src="fig/Tidyverse_Korea_logo_transparent.png" alt="Tidyverse Korea" width="100%"&gt;
+&lt;img src="fig/dlookr_logo.png" alt="dlookr logo" width="35%"&gt;
+&lt;img src="fig/alookr_logo.png" alt="alookr logo" width="35%"&gt;
 ]
 ]
     </textarea>

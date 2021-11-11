@@ -184,9 +184,15 @@ blockquote {
 .green      { color:   #009639 }
 .pink       { color:   #AE2573 }
 .red        { color:   #DA291C }
+.orange     { color:   #FFA500 }
 .warmyellow { color:   #FFB81C }
 .black      { color:   #000000 }
+.grey       { color:   #808080 }
 
+
+.large { font-size: 130% }
+.small { font-size: 70%  }
+.tiny  { font-size: 40%  }
 
 .panelset {
   --panel-tab-foreground: currentColor !important;
