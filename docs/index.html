@@ -358,10 +358,10 @@ name: solution-furrr
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt; 0.005&lt;span style='text-decoration: underline;'&gt;16&lt;/span&gt;  1.89     1.10  
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt; 0.148    0.730   -&lt;span style='color: #BB0000;'&gt;0.255&lt;/span&gt; 
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt; 0.218    0.465   -&lt;span style='color: #BB0000;'&gt;0.041&lt;/span&gt;&lt;span style='color: #BB0000; text-decoration: underline;'&gt;2&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt; 0.945    1.28     1.83  
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.707  0.561    0.697 
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.597 -&lt;span style='color: #BB0000;'&gt;0.500&lt;/span&gt;    0.466 
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.631 -&lt;span style='color: #BB0000;'&gt;1.03&lt;/span&gt;     0.352 
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.706 -&lt;span style='color: #BB0000;'&gt;1.70&lt;/span&gt;    -&lt;span style='color: #BB0000;'&gt;0.025&lt;/span&gt;&lt;span style='color: #BB0000; text-decoration: underline;'&gt;9&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ```r
@@ -390,10 +390,10 @@ distribution_minmax
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0      1         0.648
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.152  0.186     0    
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.226  0         0.103
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1      0.571     1    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   1      1         1    
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0      0.531     0.680
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.305  0.298     0.523
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.990  0         0    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -411,10 +411,10 @@ tibble::as_tibble(distribution_minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0      1         0.648
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.152  0.186     0    
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.226  0         0.103
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1      0.571     1    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   1      1         1    
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0      0.531     0.680
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.305  0.298     0.523
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.990  0         0    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -430,10 +430,10 @@ purrr::map_df(distribution, minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0      1         0.648
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.152  0.186     0    
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.226  0         0.103
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1      0.571     1    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   1      1         1    
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0      0.531     0.680
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.305  0.298     0.523
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.990  0         0    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -454,10 +454,10 @@ furrr::future_map_dfr(distribution, minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0      1         0.648
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.152  0.186     0    
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.226  0         0.103
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1      0.571     1    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   1      1         1    
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0      0.531     0.680
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.305  0.298     0.523
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.990  0         0    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -609,7 +609,7 @@ name: rdam-spm
 
 
 .pull-left[
-  &lt;img src="fig/SPM1.png" alt="R4DS" width="95%"&gt;
+  &lt;img src="fig/SPM1.png" alt="SPM1" width="95%"&gt;
 .caption[
 .grey[.small[Project Initiation 스크린샷]]
 ]
@@ -617,7 +617,7 @@ name: rdam-spm
 
 
 .pull-right[
-  &lt;img src="fig/SPM2.png" alt="process levels" width="95%"&gt;
+  &lt;img src="fig/SPM2.png" alt="SPM2" width="95%"&gt;
 .caption[
 .grey[.small[Data Acquisition 스크린샷]]
 ]  

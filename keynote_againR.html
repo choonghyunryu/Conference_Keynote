@@ -358,10 +358,10 @@ name: solution-furrr
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.707  0.561    0.697 
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.597 -&lt;span style='color: #BB0000;'&gt;0.500&lt;/span&gt;    0.466 
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.631 -&lt;span style='color: #BB0000;'&gt;1.03&lt;/span&gt;     0.352 
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.706 -&lt;span style='color: #BB0000;'&gt;1.70&lt;/span&gt;    -&lt;span style='color: #BB0000;'&gt;0.025&lt;/span&gt;&lt;span style='color: #BB0000; text-decoration: underline;'&gt;9&lt;/span&gt;
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;  0.144  -&lt;span style='color: #BB0000;'&gt;1.05&lt;/span&gt;      5.02 
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;  0.021&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt;  0.551    -&lt;span style='color: #BB0000;'&gt;0.354&lt;/span&gt;
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;  0.482   1.17     -&lt;span style='color: #BB0000;'&gt;0.377&lt;/span&gt;
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;  0.365   0.132    -&lt;span style='color: #BB0000;'&gt;1.87&lt;/span&gt; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ```r
@@ -390,10 +390,10 @@ distribution_minmax
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   1      1         1    
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0      0.531     0.680
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.305  0.298     0.523
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.990  0         0    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.266  0         1    
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0      0.722     0.221
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   1      1         0.217
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.745  0.534     0    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -411,10 +411,10 @@ tibble::as_tibble(distribution_minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   1      1         1    
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0      0.531     0.680
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.305  0.298     0.523
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.990  0         0    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.266  0         1    
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0      0.722     0.221
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   1      1         0.217
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.745  0.534     0    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -430,10 +430,10 @@ purrr::map_df(distribution, minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   1      1         1    
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0      0.531     0.680
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.305  0.298     0.523
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.990  0         0    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.266  0         1    
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0      0.722     0.221
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   1      1         0.217
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.745  0.534     0    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -454,10 +454,10 @@ furrr::future_map_dfr(distribution, minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   1      1         1    
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0      0.531     0.680
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.305  0.298     0.523
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.990  0         0    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.266  0         1    
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0      0.722     0.221
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   1      1         0.217
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.745  0.534     0    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
