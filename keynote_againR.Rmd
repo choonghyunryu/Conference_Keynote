@@ -612,7 +612,7 @@ name: rdam-spm
 
 
 .pull-left[
-  <img src="fig/SPM1.png" alt="R4DS" width="95%">
+  <img src="fig/SPM1.png" alt="SPM1" width="95%">
 .caption[
 .grey[.small[Project Initiation 스크린샷]]
 ]
@@ -620,7 +620,7 @@ name: rdam-spm
 
 
 .pull-right[
-  <img src="fig/SPM2.png" alt="process levels" width="95%">
+  <img src="fig/SPM2.png" alt="SPM2" width="95%">
 .caption[
 .grey[.small[Data Acquisition 스크린샷]]
 ]  
