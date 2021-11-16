@@ -124,7 +124,7 @@ name: paradigm-field
 # 데이터 분석 필드에서의 패러다임 전환
 
 .center[
-  &lt;img src="fig/paradigm.png" alt="데이터 분석 필드에서의 패러다임 전환" width="65%"&gt;
+  &lt;img src="fig/paradigm2.png" alt="데이터 분석 필드에서의 패러다임 전환" width="95%"&gt;
 ]
 
 --
@@ -144,7 +144,7 @@ name: paradigm-r
 # R 생태계의 패러다임 전환
 
 .center[
-  &lt;img src="fig/r-paradigm.png" alt="R 생태계의 패러다임 전환" width="65%"&gt;
+  &lt;img src="fig/r-paradigm2.png" alt="R 생태계의 패러다임 전환" width="60%"&gt;
 ]
 
 --
@@ -327,15 +327,20 @@ class: inverse, middle, center
 name: largedata-needs
 # 대용량 데이터 처리의 니즈
 
-.center[
-  &lt;img src="fig/HPC.png" alt="HPC" width="95%"&gt;
-]
+* 10년 전의 질문 - .blue[**R로 대용량 데이터 분석이 가능한가요?**]
+
+--
 
 * CRAN Task Views
   + [High-Performance and Parallel Computing with R](https://cran.r-project.org/web/views/HighPerformanceComputing.html)
 
-* 다건 처리의 진화, 당신의 위치는 어디인가요?
-  + loop &amp;#8594; apply &amp;#8594; purrr &amp;#8594; furrr
+.center[
+  &lt;img src="fig/HPC.png" alt="HPC" width="95%"&gt;
+]
+
+--
+
+* 대용량 처리 관련, 몇개의 다건 데이터 처리 관련 코드를 공유하고자 합니다.
 
 ---
 name: solution-furrr
@@ -358,10 +363,10 @@ name: solution-furrr
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.450  0.661    0.015&lt;span style='text-decoration: underline;'&gt;1&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.839  0.670   -&lt;span style='color: #BB0000;'&gt;1.39&lt;/span&gt;  
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.127 -&lt;span style='color: #BB0000;'&gt;1.49&lt;/span&gt;    -&lt;span style='color: #BB0000;'&gt;0.735&lt;/span&gt; 
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.264  0.276    0.763 
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt; 0.542    1.30     -&lt;span style='color: #BB0000;'&gt;0.341&lt;/span&gt;
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt; 0.001&lt;span style='text-decoration: underline;'&gt;24&lt;/span&gt; -&lt;span style='color: #BB0000;'&gt;1.09&lt;/span&gt;      0.689
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt; 0.008&lt;span style='text-decoration: underline;'&gt;62&lt;/span&gt; -&lt;span style='color: #BB0000;'&gt;0.686&lt;/span&gt;     0.695
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt; 0.376   -&lt;span style='color: #BB0000;'&gt;0.907&lt;/span&gt;    -&lt;span style='color: #BB0000;'&gt;0.460&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ```r
@@ -390,10 +395,10 @@ distribution_minmax
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.453  0.996     0.653
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   1      1         0    
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0      0         0.304
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.192  0.818     1    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;  1      1          0.103
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;  0      0          0.995
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;  0.013&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt; 0.171      1    
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;  0.693  0.078&lt;span style='text-decoration: underline;'&gt;3&lt;/span&gt;     0    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -411,10 +416,10 @@ tibble::as_tibble(distribution_minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.453  0.996     0.653
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   1      1         0    
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0      0         0.304
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.192  0.818     1    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;  1      1          0.103
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;  0      0          0.995
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;  0.013&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt; 0.171      1    
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;  0.693  0.078&lt;span style='text-decoration: underline;'&gt;3&lt;/span&gt;     0    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -430,10 +435,10 @@ purrr::map_df(distribution, minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.453  0.996     0.653
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   1      1         0    
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0      0         0.304
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.192  0.818     1    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;  1      1          0.103
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;  0      0          0.995
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;  0.013&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt; 0.171      1    
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;  0.693  0.078&lt;span style='text-decoration: underline;'&gt;3&lt;/span&gt;     0    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -454,10 +459,10 @@ furrr::future_map_dfr(distribution, minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.453  0.996     0.653
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   1      1         0    
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0      0         0.304
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0.192  0.818     1    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;  1      1          0.103
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;  0      0          0.995
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;  0.013&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt; 0.171      1    
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;  0.693  0.078&lt;span style='text-decoration: underline;'&gt;3&lt;/span&gt;     0    
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -494,6 +499,38 @@ parsing_log &lt;- seq(nrow(ga_record)) %&gt;%
   }, .progress = TRUE)
 ```
 
+
+---
+name: largedata-needs
+# 문제는 연장이 아니다
+
+* 다건 처리의 진화, 당신의 위치는 어디인가요?
+  + loop &amp;#8594; apply &amp;#8594; purrr &amp;#8594; furrr
+
+--
+
+* 의외로 분석가는 습득한 기술만 고집한다  
+  + 빠른 신기술 개발 주기
+  + 분화되고 전문화되는 데이터 분석 기술
+  
+--
+
+* R 에반젤리스트 필요성
+  + 새로운 유용한 R 기술이 나왔을 경우, 새로 창조된 가치를 R 분석가에 전파
+  + R 커뮤니티의 역할
+  
+--
+
+* 자율적 선택으로는 모자라!!, 동기를 부여하자.
+  + 데이터분석 방법론에 R 테크놀로지를 접목하자.
+    + 그러나, 방법론의 Compliance 요소 보다는 효용성을 전파하자.
+
+--
+
+* R Data Analytics Methodology 
+  + 데이터 분석 방법론
+  + Reproducible Research 기반의 데이터 분석 경험 공유
+  + 아직은 함께 만들어가야할 방린이 (방법론 + 어린이)  
 
 ---
 name: intro-rdam
@@ -750,12 +787,21 @@ name: close
 
 # 마무리
 
-- 한국 R 생태계의 활성화 기대
-  - 오픈 통계 분석기의 대중화 
-  - R 데이터 분석 방법론의 데이터 분석 현장에서의 활용
+- R 커뮤니티의 역할 기대
+  - 중급자를 위한 R 커뮤니티의 에반젤리스트화
+  - 초보자를 위한 R 커뮤니티의 경험 전수
+  
+- 오픈 통계 분석기의 대중화
+  - 오픈 통계 분석기의 성공적인 개발
+  - SPSS/SAS 사용자의 대체제
 
-- 후속 세션을 통해서 R 관련 많은 정보를 얻고, 현장에서 적용하기를 바람
+- R 데이터 분석 방법론 전파 
+  - 데이터 분석가의 경험 수렴을 통한 개발과 개선
+  - 데이터 분석의 효율성과 생산성 제고 기여  
 
+- .blue[**Again wind in Korea with GNU R**]
+  - 한국 R 생태계의 활성화 기대
+  - 오픈 통계 분석기, 방법론의 협업 방법 구체화 계획
 
 
 ---
