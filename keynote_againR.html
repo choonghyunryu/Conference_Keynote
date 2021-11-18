@@ -196,6 +196,11 @@ name: rconf
   - 20여년 R 사용을 통해 꿈 꾸었던 빅 빅처를 소개하고,
   - 역동적인 한국의 R 생태계 조성을 위한 협력이 늘어나기를 기대
 
+---
+name: academy
+class: inverse, middle, center
+
+# 아카데미를 위한 R 환경 개선
 
 ---
 name: survey-1
@@ -212,30 +217,6 @@ name: survey-1
       
 * **.blue[오늘 이야기할 첫번째 주제]** - 발상의 전환
   + **.red["R이 아니라, R로 만들어진 데이터 분석 소프트웨어를 만들어 보자."]** 
-
-
----
-name: survey-2
-# 다시 꺼낸 Survey - 대중화의 걸림돌
-
-.center[
-  &lt;img src="fig/survey3.png" alt="2011년 R User Conference 설문" width="65%"&gt;
-]
-
-* 엔터프라이즈의 R 진입 장벽은 무엇인가?
-  + 대용량 분산 환경 니즈 &amp;#8594; **대용량 데이터처리의 성능 구현 사례** 
-  + 한글화 자료, 샘플, 매뉴얼의 니즈 &amp;#8594; **한글화된 가이드 제공**  
-  
-* **.blue[오늘 이야기할 두번째 주제]** - 빅 픽쳐, 욕심 내보기
-  + **.red["All-in-One R 데이터분석 방법론을 만들어 보자."]** 
-      + CRISP-DM, SEMMA, Tidiverse 데이터과학 프로세스 접목
-
-
----
-name: academy
-class: inverse, middle, center
-
-# 아카데미를 위한 R 환경 개선
 
 ---
 name: intro-openstat
@@ -269,6 +250,23 @@ name: feature-openstat
 
 
 ---
+name: feature-openstat2
+# 오픈소스 통계분석 시스템 특징 
+
+**데이터 분석 보고서 지원** &amp;#8594; .blue[**PDF 포맷 보고서**]와 .blue[**HTML 포맷 보고서**] 
+
+.center[
+  &lt;img src="fig/bitstat_report_pdf.jpeg" alt="PDF 포맷 보고서" width="30%"&gt;
+  &lt;img src="fig/bitstat_report_web.jpeg" alt="HTML 포맷 보고서" width="40%"&gt;  
+]
+
+**도움말 및 튜토리얼 지원** 
+
+.center[
+  &lt;img src="fig/help.png" alt="PDF 포맷 보고서" width="40%"&gt;
+]
+
+---
 name: why-openstat
 # 왜 통계분석 시스템인가?
 
@@ -299,30 +297,28 @@ name: why-openstat
 
 
 ---
-name: feature-openstat2
-# 오픈소스 통계분석 시스템 특징 
-
-**데이터 분석 보고서 지원** &amp;#8594; .blue[**PDF 포맷 보고서**]와 .blue[**HTML 포맷 보고서**] 
-
-.center[
-  &lt;img src="fig/bitstat_report_pdf.jpeg" alt="PDF 포맷 보고서" width="30%"&gt;
-  &lt;img src="fig/bitstat_report_web.jpeg" alt="HTML 포맷 보고서" width="40%"&gt;  
-]
-
-**도움말 및 튜토리얼 지원** 
-
-.center[
-  &lt;img src="fig/help.png" alt="PDF 포맷 보고서" width="40%"&gt;
-]
-
-
----
 name: enterprise
 class: inverse, middle, center
 
 # 엔터프라이즈를 위한 R 환경 개선
 
+---
+name: survey-2
+# 다시 꺼낸 Survey - 대중화의 걸림돌
 
+.center[
+  &lt;img src="fig/survey3.png" alt="2011년 R User Conference 설문" width="65%"&gt;
+]
+
+* 엔터프라이즈의 R 진입 장벽은 무엇인가?
+  + 대용량 분산 환경 니즈 &amp;#8594; **대용량 데이터처리의 성능 구현 사례** 
+  + 한글화 자료, 샘플, 매뉴얼의 니즈 &amp;#8594; **한글화된 가이드 제공**  
+  
+* **.blue[오늘 이야기할 두번째 주제]** - 빅 픽쳐, 욕심 내보기
+  + **.red["All-in-One R 데이터분석 방법론을 만들어 보자."]** 
+      + CRISP-DM, SEMMA, Tidiverse 데이터과학 프로세스 접목
+      
+      
 ---
 name: largedata-needs
 # 대용량 데이터 처리의 니즈
@@ -361,12 +357,12 @@ name: solution-furrr
 ```
 
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
-  uniform normal student_t
-    &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt; 0.542    1.30     -&lt;span style='color: #BB0000;'&gt;0.341&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt; 0.001&lt;span style='text-decoration: underline;'&gt;24&lt;/span&gt; -&lt;span style='color: #BB0000;'&gt;1.09&lt;/span&gt;      0.689
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt; 0.008&lt;span style='text-decoration: underline;'&gt;62&lt;/span&gt; -&lt;span style='color: #BB0000;'&gt;0.686&lt;/span&gt;     0.695
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt; 0.376   -&lt;span style='color: #BB0000;'&gt;0.907&lt;/span&gt;    -&lt;span style='color: #BB0000;'&gt;0.460&lt;/span&gt;
+  uniform  normal student_t
+    &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;   &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;  0.085&lt;span style='text-decoration: underline;'&gt;2&lt;/span&gt; -&lt;span style='color: #BB0000;'&gt;0.092&lt;/span&gt;&lt;span style='color: #BB0000; text-decoration: underline;'&gt;9&lt;/span&gt;    -&lt;span style='color: #BB0000;'&gt;0.203&lt;/span&gt;
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;  0.508  -&lt;span style='color: #BB0000;'&gt;0.216&lt;/span&gt;      0.726
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;  0.618   0.575     -&lt;span style='color: #BB0000;'&gt;0.745&lt;/span&gt;
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;  0.764  -&lt;span style='color: #BB0000;'&gt;0.145&lt;/span&gt;     -&lt;span style='color: #BB0000;'&gt;0.651&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ```r
@@ -395,10 +391,10 @@ distribution_minmax
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;  1      1          0.103
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;  0      0          0.995
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;  0.013&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt; 0.171      1    
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;  0.693  0.078&lt;span style='text-decoration: underline;'&gt;3&lt;/span&gt;     0    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0     0.155     0.368 
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.623 0         1     
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.785 1         0     
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1     0.089&lt;span style='text-decoration: underline;'&gt;5&lt;/span&gt;    0.063&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -416,10 +412,10 @@ tibble::as_tibble(distribution_minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;  1      1          0.103
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;  0      0          0.995
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;  0.013&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt; 0.171      1    
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;  0.693  0.078&lt;span style='text-decoration: underline;'&gt;3&lt;/span&gt;     0    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0     0.155     0.368 
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.623 0         1     
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.785 1         0     
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1     0.089&lt;span style='text-decoration: underline;'&gt;5&lt;/span&gt;    0.063&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -435,10 +431,10 @@ purrr::map_df(distribution, minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;  1      1          0.103
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;  0      0          0.995
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;  0.013&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt; 0.171      1    
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;  0.693  0.078&lt;span style='text-decoration: underline;'&gt;3&lt;/span&gt;     0    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0     0.155     0.368 
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.623 0         1     
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.785 1         0     
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1     0.089&lt;span style='text-decoration: underline;'&gt;5&lt;/span&gt;    0.063&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -459,10 +455,10 @@ furrr::future_map_dfr(distribution, minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;  1      1          0.103
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;  0      0          0.995
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;  0.013&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt; 0.171      1    
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;  0.693  0.078&lt;span style='text-decoration: underline;'&gt;3&lt;/span&gt;     0    
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0     0.155     0.368 
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.623 0         1     
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.785 1         0     
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1     0.089&lt;span style='text-decoration: underline;'&gt;5&lt;/span&gt;    0.063&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]

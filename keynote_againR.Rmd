@@ -252,6 +252,11 @@ name: rconf
   - 20여년 R 사용을 통해 꿈 꾸었던 빅 빅처를 소개하고,
   - 역동적인 한국의 R 생태계 조성을 위한 협력이 늘어나기를 기대
 
+---
+name: academy
+class: inverse, middle, center
+
+# 아카데미를 위한 R 환경 개선
 
 ---
 name: survey-1
@@ -268,30 +273,6 @@ name: survey-1
       
 * **.blue[오늘 이야기할 첫번째 주제]** - 발상의 전환
   + **.red["R이 아니라, R로 만들어진 데이터 분석 소프트웨어를 만들어 보자."]** 
-
-
----
-name: survey-2
-# 다시 꺼낸 Survey - 대중화의 걸림돌
-
-.center[
-  <img src="fig/survey3.png" alt="2011년 R User Conference 설문" width="65%">
-]
-
-* 엔터프라이즈의 R 진입 장벽은 무엇인가?
-  + 대용량 분산 환경 니즈 &#8594; **대용량 데이터처리의 성능 구현 사례** 
-  + 한글화 자료, 샘플, 매뉴얼의 니즈 &#8594; **한글화된 가이드 제공**  
-  
-* **.blue[오늘 이야기할 두번째 주제]** - 빅 픽쳐, 욕심 내보기
-  + **.red["All-in-One R 데이터분석 방법론을 만들어 보자."]** 
-      + CRISP-DM, SEMMA, Tidiverse 데이터과학 프로세스 접목
-
-
----
-name: academy
-class: inverse, middle, center
-
-# 아카데미를 위한 R 환경 개선
 
 ---
 name: intro-openstat
@@ -325,6 +306,23 @@ name: feature-openstat
 
 
 ---
+name: feature-openstat2
+# 오픈소스 통계분석 시스템 특징 
+
+**데이터 분석 보고서 지원** &#8594; .blue[**PDF 포맷 보고서**]와 .blue[**HTML 포맷 보고서**] 
+
+.center[
+  <img src="fig/bitstat_report_pdf.jpeg" alt="PDF 포맷 보고서" width="30%">
+  <img src="fig/bitstat_report_web.jpeg" alt="HTML 포맷 보고서" width="40%">  
+]
+
+**도움말 및 튜토리얼 지원** 
+
+.center[
+  <img src="fig/help.png" alt="PDF 포맷 보고서" width="40%">
+]
+
+---
 name: why-openstat
 # 왜 통계분석 시스템인가?
 
@@ -355,30 +353,28 @@ name: why-openstat
 
 
 ---
-name: feature-openstat2
-# 오픈소스 통계분석 시스템 특징 
-
-**데이터 분석 보고서 지원** &#8594; .blue[**PDF 포맷 보고서**]와 .blue[**HTML 포맷 보고서**] 
-
-.center[
-  <img src="fig/bitstat_report_pdf.jpeg" alt="PDF 포맷 보고서" width="30%">
-  <img src="fig/bitstat_report_web.jpeg" alt="HTML 포맷 보고서" width="40%">  
-]
-
-**도움말 및 튜토리얼 지원** 
-
-.center[
-  <img src="fig/help.png" alt="PDF 포맷 보고서" width="40%">
-]
-
-
----
 name: enterprise
 class: inverse, middle, center
 
 # 엔터프라이즈를 위한 R 환경 개선
 
+---
+name: survey-2
+# 다시 꺼낸 Survey - 대중화의 걸림돌
 
+.center[
+  <img src="fig/survey3.png" alt="2011년 R User Conference 설문" width="65%">
+]
+
+* 엔터프라이즈의 R 진입 장벽은 무엇인가?
+  + 대용량 분산 환경 니즈 &#8594; **대용량 데이터처리의 성능 구현 사례** 
+  + 한글화 자료, 샘플, 매뉴얼의 니즈 &#8594; **한글화된 가이드 제공**  
+  
+* **.blue[오늘 이야기할 두번째 주제]** - 빅 픽쳐, 욕심 내보기
+  + **.red["All-in-One R 데이터분석 방법론을 만들어 보자."]** 
+      + CRISP-DM, SEMMA, Tidiverse 데이터과학 프로세스 접목
+      
+      
 ---
 name: largedata-needs
 # 대용량 데이터 처리의 니즈
