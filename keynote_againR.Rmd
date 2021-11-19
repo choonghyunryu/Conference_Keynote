@@ -134,14 +134,14 @@ name: past-rconf
   <img src="fig/banner.jpg" alt="2011년 1회 R User Conference 모시는글 발췌" width="100%">
 ]
 
+* **.blue["New Wind in Korea with GNU R"]**
+  + 제 1회 R User Conference 슬로건
+  + Dr. Duncan, Dr. John Fox, Dr. Friedrich Leisch, Tal Galili
+  
 * 10년 전에는 
   + 빅데이터 분석 도구로서의 R 활용에 대한 기대감 
   + SI, 인터넷, 통신, 게임업체 등 기업의 높은 관심도
   + Statistical Computing > Big Data > Visualization > Bioinformatics 니즈
-
-* **.blue["New Wind in Korea with GNU R"]**
-  + 제 1회 R User Conference 슬로건
-  + Dr. Duncan, Dr. John Fox, Dr. Friedrich Leisch, Tal Galili
 
 * 조기 마감, 210여명 오프라인 행사 참석
   + 컨퍼런스 공간의 한계로 선착순 수용

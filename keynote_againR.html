@@ -78,14 +78,14 @@ name: past-rconf
   &lt;img src="fig/banner.jpg" alt="2011년 1회 R User Conference 모시는글 발췌" width="100%"&gt;
 ]
 
+* **.blue["New Wind in Korea with GNU R"]**
+  + 제 1회 R User Conference 슬로건
+  + Dr. Duncan, Dr. John Fox, Dr. Friedrich Leisch, Tal Galili
+  
 * 10년 전에는 
   + 빅데이터 분석 도구로서의 R 활용에 대한 기대감 
   + SI, 인터넷, 통신, 게임업체 등 기업의 높은 관심도
   + Statistical Computing &gt; Big Data &gt; Visualization &gt; Bioinformatics 니즈
-
-* **.blue["New Wind in Korea with GNU R"]**
-  + 제 1회 R User Conference 슬로건
-  + Dr. Duncan, Dr. John Fox, Dr. Friedrich Leisch, Tal Galili
 
 * 조기 마감, 210여명 오프라인 행사 참석
   + 컨퍼런스 공간의 한계로 선착순 수용
@@ -357,12 +357,12 @@ name: solution-furrr
 ```
 
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
-  uniform  normal student_t
-    &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;   &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;  0.085&lt;span style='text-decoration: underline;'&gt;2&lt;/span&gt; -&lt;span style='color: #BB0000;'&gt;0.092&lt;/span&gt;&lt;span style='color: #BB0000; text-decoration: underline;'&gt;9&lt;/span&gt;    -&lt;span style='color: #BB0000;'&gt;0.203&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;  0.508  -&lt;span style='color: #BB0000;'&gt;0.216&lt;/span&gt;      0.726
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;  0.618   0.575     -&lt;span style='color: #BB0000;'&gt;0.745&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;  0.764  -&lt;span style='color: #BB0000;'&gt;0.145&lt;/span&gt;     -&lt;span style='color: #BB0000;'&gt;0.651&lt;/span&gt;
+  uniform normal student_t
+    &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;  0.352  -&lt;span style='color: #BB0000;'&gt;2.58&lt;/span&gt;      0.924
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;  0.701  -&lt;span style='color: #BB0000;'&gt;0.766&lt;/span&gt;     0.943
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;  0.533  -&lt;span style='color: #BB0000;'&gt;0.174&lt;/span&gt;    -&lt;span style='color: #BB0000;'&gt;1.11&lt;/span&gt; 
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;  0.037&lt;span style='text-decoration: underline;'&gt;4&lt;/span&gt; -&lt;span style='color: #BB0000;'&gt;1.26&lt;/span&gt;      0.800
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ```r
@@ -391,10 +391,10 @@ distribution_minmax
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0     0.155     0.368 
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.623 0         1     
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.785 1         0     
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1     0.089&lt;span style='text-decoration: underline;'&gt;5&lt;/span&gt;    0.063&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt;
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.474  0         0.991
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   1      0.754     1    
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.746  1         0    
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0      0.549     0.930
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -412,10 +412,10 @@ tibble::as_tibble(distribution_minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0     0.155     0.368 
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.623 0         1     
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.785 1         0     
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1     0.089&lt;span style='text-decoration: underline;'&gt;5&lt;/span&gt;    0.063&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt;
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.474  0         0.991
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   1      0.754     1    
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.746  1         0    
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0      0.549     0.930
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -431,10 +431,10 @@ purrr::map_df(distribution, minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0     0.155     0.368 
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.623 0         1     
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.785 1         0     
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1     0.089&lt;span style='text-decoration: underline;'&gt;5&lt;/span&gt;    0.063&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt;
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.474  0         0.991
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   1      0.754     1    
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.746  1         0    
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0      0.549     0.930
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
@@ -455,10 +455,10 @@ furrr::future_map_dfr(distribution, minmax)
 &lt;div class="sourceCode"&gt;&lt;pre class="sourceCode"&gt;&lt;code class="sourceCode"&gt;&lt;span style='color: #555555;'&gt;# A tibble: 4 x 3&lt;/span&gt;
   uniform normal student_t
     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;  &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;     &lt;span style='color: #555555; font-style: italic;'&gt;&amp;lt;dbl&amp;gt;&lt;/span&gt;
-&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0     0.155     0.368 
-&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   0.623 0         1     
-&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.785 1         0     
-&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   1     0.089&lt;span style='text-decoration: underline;'&gt;5&lt;/span&gt;    0.063&lt;span style='text-decoration: underline;'&gt;7&lt;/span&gt;
+&lt;span style='color: #555555;'&gt;1&lt;/span&gt;   0.474  0         0.991
+&lt;span style='color: #555555;'&gt;2&lt;/span&gt;   1      0.754     1    
+&lt;span style='color: #555555;'&gt;3&lt;/span&gt;   0.746  1         0    
+&lt;span style='color: #555555;'&gt;4&lt;/span&gt;   0      0.549     0.930
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 ]
